@@ -1,4 +1,7 @@
 import React from 'react';
+import './Child.less';
+import './Child.css';
+import './Child.scss';
 
 class Child extends React.Component {
 	constructor(props) {
@@ -32,9 +35,9 @@ class Child extends React.Component {
 	render() {
 		return (
 			<div>
-				<h2>child 父子组建练习</h2>
-				<p>{this.props.name}</p>
-				<p>{this.props.parent}</p>
+				<h2 className="test">我有less样式——————child 父子组建练习</h2>
+				<p className="test_css">我有css样式——————{this.props.name}</p>
+				<p className="test_scss">我有scss样式——————{this.props.parent}</p>
 			</div>
 		);
 	}
